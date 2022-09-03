@@ -1,12 +1,13 @@
-/* 계산기 */
-const calculator = {
-    plus: function (a, b){
-        console.log(a + b);
-    },
-    minus: function (a, b){
-        console.log(a - b);
-    }
-};
+const bg = document.querySelector("body.bg");
 
-calculator.plus(2, 5);
-calculator.minus(6, 5);
+function handleResizebg() {
+  if (window.innerWidth < 700) {
+    bg.classList = "resizedS";
+  } else if (window.innerWidth >= 1200) {
+    bg.classList = "bg";
+  } else if (window.innerWidth > 900) {
+    bg.classList = "resizedM";
+  }
+}
+
+window.addEventListener("resize", handleResizebg);

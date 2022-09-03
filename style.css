@@ -1,3 +1,15 @@
-body{
-    background-color: antiquewhite;
-}
+.bg {
+    background-color: goldenrod;
+    transition: background-color, 0.3s;
+  }
+  h1 {
+    color: white;
+  }
+  .resizedM {
+    background-color: mediumpurple;
+    transition: background-color, 0.3s;
+  }
+  .resizedS {
+    background-color: royalblue;
+    transition: background-color, 0.3s;
+  }
